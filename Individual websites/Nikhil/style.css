@@ -21,7 +21,7 @@
 	
 	/* Text Background Effect */
 	
-	background: url('https://source.unsplash.com/random/?space,gradient');
+	background: url('https://source.unsplash.com/random/?gradient');
 	-webkit-background-clip: text;
 	color: transparent;
 
