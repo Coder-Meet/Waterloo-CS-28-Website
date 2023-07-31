@@ -22,7 +22,6 @@
   const auth = getAuth(app)
 //Getting info from HTML
 var name = document.getElementById("Name")
-var username = document.getElementById("Username")
 var email = document.getElementById("Email")
 var password = document.getElementById("Password")
 
@@ -32,7 +31,6 @@ window.signup = function(e) {
     e.preventDefault();
     var obj = {
       name: name.value,
-      username: username.value,
       email: email.value,
       password: password.value,
     };
