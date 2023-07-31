@@ -5,17 +5,15 @@
 <body class="text-center">
 <h1>Login</h1>
 <hr />
-
+<form action="#" onsubmit="login(event)">
 <div class="input-group mb-3">
-    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+    <input id="Email" type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
 </div>
   
 <div class="input-group mb-3">
-    <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+    <input id="Password" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
 </div>
-
-<form action="home.html">
-    <button class="btn btn-dark">Log In</button>
+    <button class="btn btn-dark" onclick="login(event)">Log In</button>
 </form>
 
 <hr/>
