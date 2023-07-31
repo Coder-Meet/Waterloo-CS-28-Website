@@ -39,6 +39,7 @@ window.signup = function(e) {
     createUserWithEmailAndPassword(auth, obj.email, obj.password)
       .then(function(success) {
         alert('Signup Successful');
+        window.location.href = 'home.html';
       })
       .catch(function(error) {
         alert('Error: ' + error.message); // Display the specific error message
