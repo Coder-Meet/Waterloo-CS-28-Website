@@ -1,0 +1,40 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+    }
+
+header {
+    text-align: center;
+    padding: 15px;
+}
+
+body {
+
+    background: 
+    radial-gradient(circle at 50% 20em, khaki 0em, transparent 70em),
+    radial-gradient(circle at 10% 25em, lightcoral 0em, transparent 70em),
+    radial-gradient(circle at 80% 5em, lightskyblue 0em, transparent 70em);
+    /* background-blend-mode: screen; */
+    background-size: 200%, 200%;
+    background-position: 0%, 0%;
+
+
+    padding: 0em 8em;
+    animation: bg 20s infinite;
+    animation-timing-function: ease-in-out;
+    transform: rotate(0);
+    /* animation-direction: alternate; */
+}
+
+h1 {
+    font-size: 3em;
+animation-timing-function: linear;
+}
+
+@keyframes bg {
+    0%, 100% {
+        background-position: 0%, 0%;
+    }
+    50% {
+        background-position: 100%, 100%;
+    }
+}
