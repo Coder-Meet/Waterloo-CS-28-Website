@@ -2,21 +2,6 @@
     font-family: 'Roboto Mono', monospace;
     }
 
-header {
-    text-align: center;
-    padding: 10px;
-
-}
-
-h1 {
-    font-size: 4em;
-    margin: 1.5em 0px 0px 0px
-}
-
-h2 {
-    font-size: 2em;
-}
-
 .page {
     padding: 0%;
     margin: 0%;
@@ -44,8 +29,8 @@ h2 {
 .gradients li {
     position: absolute;
     list-style: none;
-    width: 60px;
-    height: 60px;
+    width: 10px;
+    height: 10px;
     
     animation: animate 20s linear;
     border-radius: 50%;
@@ -89,9 +74,26 @@ h2 {
 }
 
 .container {
-    padding: 0em 8em;
+
+    padding: 0em clamp(2em, 10vw, 8em);
     position: relative;
 
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+
+}
+
+h1 {
+    font-size: clamp(2.5em, 8vw, 3.5em) ;
+
+    margin: 1.5em 0px 0px 0px
+}
+
+h2 {
+    font-size: calc(clamp(2.5em, 8vw, 3.5em)/1.7) ;
 }
 
 .buttons {
@@ -110,16 +112,25 @@ h2 {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    gap: 3em;
+    gap: clamp(0.5em, 15vw - 50px, 3em);
     text-align: center;
 
     
 }
 
 .icons i {
-    font-size: 30px;
+
+    font-size: clamp(25px, 5vw, 35px);
+    width: calc(clamp(25px, 5vw, 35px)*1.6);
+    height: calc(clamp(25px, 5vw, 35px)*1.6);
+    
+    /* font-size: 20px;
+    width: 30px;
+    height: 30px; */
+
+    /* font-size: 30px;
     width: 50px;
-    height: 50px;
+    height: 50px; */
     box-sizing: border-box;
 
     border-style: solid;
@@ -128,7 +139,7 @@ h2 {
 
     background: rgba(255, 255, 255, 0.2) ;
 
-    padding: 15% 0px;
+    padding: calc(20% - 2.2px) 0px;
     margin: 0em;
 }
 
