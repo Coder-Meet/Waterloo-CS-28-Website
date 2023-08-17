@@ -5,18 +5,20 @@
 .page {
     padding: 0%;
     margin: 0%;
+    
     position: relative;
 }
 
 .background { 
     position: absolute;
     width: 100%;
-    min-height:100vh;
+    height:100vh;
+    min-height: 30em;
 }
 
 .gradients {
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0px;
     left: 0px;
@@ -35,23 +37,22 @@
     animation: animate 30s linear;
     border-radius: 50%;
     overflow: hidden;
-    mix-blend-mode: screen;
+    /* mix-blend-mode: screen; */
 
-    animation: bg 20s infinite;
-    animation-timing-function: ease-in-out; 
 
-    
 }
-
+/* 
 .gradients li:nth-child(1) {
     --r: clamp(70em,170vw,130em);
     left: calc(50% - var(--r) / 2);
     top: calc(20em - var(--r) / 2);
     width: var(--r);
     height: var(--r);
-    background: radial-gradient(circle at 50% 50%, rgba(252, 238, 109) calc(var(--r) / 10) , transparent calc(var(--r) / 2));
-    
+    background: radial-gradient(circle at 50% 50%, rgb(255, 242, 126) calc(var(--r) / 10) , transparent calc(var(--r) / 2));
+
 }
+
+
 
 .gradients li:nth-child(2) {
     --r: clamp(70em,170vw,130em);
@@ -60,7 +61,6 @@
     width: var(--r);
     height: var(--r);
     background: radial-gradient(circle at 50% 50%, rgb(255, 165, 165) calc(var(--r) / 10), transparent calc(var(--r) / 2));  
-    
 }
 
 .gradients li:nth-child(3) {
@@ -70,8 +70,7 @@
     width: var(--r);
     height: var(--r);
     background: radial-gradient(circle at 50% 50%, rgb(164, 220, 255) calc(var(--r) / 10), transparent calc(var(--r) / 2));
-    
-}
+} */
 
 @keyframes bg {
     0%, 100% {
